@@ -158,7 +158,7 @@ public class Option implements Cloneable, Serializable {
         return valueSeperator;
     }
 
-    void addValueForProcessing(String value) {
+    public void addValueForProcessing(String value) {
         if (numOfArgs == UNINITIALIZED) {
             throw new RuntimeException("NO_ARGS_ALLOWED");
         }
@@ -192,6 +192,10 @@ public class Option implements Cloneable, Serializable {
     
     public String getValue() {
         return hasNoValues() ? null : values.get(0);
+    }
+    
+    public String getValue(int index) {
+        return hasNoValues() ? null : values.get(index);
     }
 
     public String[] getValues() {
