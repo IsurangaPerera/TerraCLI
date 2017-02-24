@@ -48,7 +48,7 @@ public class Option implements Cloneable, Serializable {
     public Option(String opt, String longOpt, boolean hasArg, String description)
             throws IllegalArgumentException {
 
-        OptionValidator.validateOption(opt);
+        OptionValidator2.validateOption(opt);
 
         this.opt = opt;
         this.longOpt = longOpt;
@@ -298,7 +298,7 @@ public class Option implements Cloneable, Serializable {
 
         private Builder(final String opt) throws IllegalArgumentException
         {
-            OptionValidator.validateOption(opt);
+            OptionValidator2.validateOption(opt);
             this.opt = opt;
         }
         
