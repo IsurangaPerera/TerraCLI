@@ -1,14 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.terra.projects.terracli;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  *
  * @author isurangaperera
  */
-public class Parser {
-    
-}
+/*public abstract class Parser implements CommandLineParser {
+    private static final long SERIAL_VERSION_UID = 1L;
+    private final Map<String, Option> shortOptions = new LinkedHashMap<String, Option>();
+}*/
